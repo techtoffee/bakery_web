@@ -4,7 +4,7 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <title>SFC</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -13,34 +13,125 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2.0/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2.0/dist/flickity.pkgd.min.js"></script>
 </head>
 
 <body>
-    <nav class="navbar navbar-fixed-top navbar-expand-lg navbar-light bg-light na ">
-        <a class="navbar-brand" href="#">LOGO</a>
+    <nav class="navbar navbar-fixed-top navbar-expand-sm navbar-light  ">
+        <a class="navbar-brand" id="nav"  href="#">SFC Fried Chicken And Pastries</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav navbar-right">
-                <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="#">Features  </a>
-                <a class="nav-item nav-link" href="#">Pricing</a>
-                <a class="nav-item nav-link" href="#">Disabled</a>
-                <a class="nav-item nav-link" href="#"><span class="glyphicon glyphicon-shopping-cart"><span class="tt-cart">0</span> Cart  </a>
-                <a class="nav-item nav-link" href="#"><span class="glyphicon glyphicon-log-in"></span>  Login </a>
+            <div class="navbar-nav navbar-right ">
+                <a class="nav-item nav-link active" id="nav" href="#">Home <span class="sr-only">(current)</span></a>
+
+                <a class="nav-item nav-link"id="nav" href="menu.html">Menu</a>
+                <a class="nav-item nav-link"id="nav" href="#feat">AboutUs</a>
+                <a class="nav-item nav-link"id="nav" href="cart.html"><span class="glyphicon glyphicon-shopping-cart"><span class="tt-cart">0</span> Cart  </a>
+                <a class="nav-item nav-link"id="nav" href="login1.html"><span class="glyphicon glyphicon-user"></span>  Login </a>
             </div>
         </div>
     </nav>
+
     <div class="container">
-        <img src="balaji2cut.png" alt=""  class="img-responsive float-left">         
-        
+      <div class="row align-items-center">
+        <div class="col-6">
+          <div id="anim">Escape</div>
+          <div id="anim"><span>into amazing experiences</span></div>
+        </div>
+        <div class="col-md-6">
+          <img class="img-responsive" src="cake1.png"id="img1" alt="">
+        </div>
+      </div>
+      <div class="container">
+  <div class="row">
+    <div class="col text-center">
+      <a href="menu.html"><button type="button" class="btn btn-dark">Order Now</button></a>
     </div>
-    
+    </div>
+  </div>
+    </div>
+    <h3 id="abt">Featured Cake</h3>
+    <div class="carousel-wrapper align-self-center " id="feat">
+      <div class="carousel" data-flickity>
+        <div class="carousel-cell">
+          <h3>Product 1</h3>
+          <a class="more" href="">Add to cart</a>
+          <img src="https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=" />
+          <div class="line"></div>
+          <div class="price">
+            <span>225<sup>RS</sup></span>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <h3>Product 2</h3>
+          <a class="more" href="">Add to cart</a>
+          <img src="https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=" />
+          <div class="line"></div>
+          <div class="price">
+            <span>225<sup>RS</sup></span>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <h3>Product 3</h3>
+          <a class="more" href="">Add to cart</a>
+          <img src="https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=" />
+          <div class="line"></div>
+          <div class="price">
+            <span>225<sup>RS</sup></span>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <h3>Product 4</h3>
+          <a class="more" href="">Add to cart</a>
+          <img src="https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=" />
+          <div class="line"></div>
+          <div class="price">
+            <span>225<sup>RS</sup></span>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <h3>Product 5</h3>
+          <a class="more" href="">Add to cart</a>
+          <img src="https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=" />
+          <div class="line"></div>
+          <div class="price">
+            <span>225<sup>RS</sup></span>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <h3>Product 6</h3>
+          <a class="more" href="">Add to cart</a>
+          <img src="https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=" />
+          <div class="line"></div>
+          <div class="price">
+            <span>225<sup>RS</sup></span>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <div class="container"id="aboutus">
+      <h3 id="abt">AboutUs</h3>
 
+      <div class="row align-items-end">
+        <div class="col-8">
+          <span class="glyphicon glyphicon-earphone"> 095002 07407</span></br>
+        <span class="glyphicon glyphicon-map-marker">  No.6,Sri Sai Lakshmi Nagar,</br>   near HDFC Bank,</br>  Sriperumbudur, </br>   Tamil Nadu-602105</span>
 
+        </div>
+      </div>
+    </div>
 
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
