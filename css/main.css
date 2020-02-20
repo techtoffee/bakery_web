@@ -15,11 +15,13 @@ html,body{
   height: 100%;
   width: auto;
 }
+
 .navbar{
   background-color: #142850;
   position: fixed;
   overflow:visible;
 }
+
 #abt{
   margin-top: 100px;
 }
@@ -27,6 +29,7 @@ html,body{
   color: #fffdf9;
   padding: 10px;
 }
+
 #img1{
   max-width: 100%;
   height: auto;
@@ -178,4 +181,35 @@ h3 {
 }
 .carousel-wrapper .flickity-viewport, .carousel-wrapper .flickity-slider {
   overflow: visible;
+}
+
+section {
+    position: relative;
+  }
+
+section img {
+      position: absolute;
+}
+
+.top {
+      animation-name: fade;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+      animation-duration: 3s;
+      animation-direction: alternate;
+}
+
+@keyframes fade {
+      0% {
+          opacity: 1;
+      }
+      25% {
+          opacity: 1;
+      }
+      75% {
+          opacity: 0;
+      }
+      100% {
+          opacity: 0;
+      }
 }
