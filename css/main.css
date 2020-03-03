@@ -21,7 +21,12 @@ html,body{
   position: fixed;
   overflow:visible;
 }
-
+#orderBtn{
+  margin-top: 220px
+}
+#wrd{
+  margin-top: 110px
+}
 #abt{
   margin-top: 100px;
 }
@@ -40,6 +45,7 @@ html,body{
   overflow:hidden;
   white-space:nowrap;
   font-size: 30px
+
 }
 #anim:first-of-type {    /* For increasing performance
                        ID/Class should've been used.

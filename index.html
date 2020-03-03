@@ -29,36 +29,38 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav navbar-right ">
-                <a class="nav-item nav-link active" id="nav" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link active" id="nav" href="index.html">Home <span class="sr-only">(current)</span></a>
                 <a class="nav-item nav-link"id="nav" href="menu.html">Menu</a>
                 <a class="nav-item nav-link"id="nav" href="#feat">AboutUs</a>
                 <a class="nav-item nav-link"id="nav" href="cart.html"><span class="glyphicon glyphicon-shopping-cart"><span class="tt-cart">0</span> Cart  </a>
-                <a class="nav-item nav-link"id="nav" href="login.html"><span class="glyphicon glyphicon-user"></span>  Login </a>
+                <a class="nav-item nav-link"id="nav" href="login.php"><span class="glyphicon glyphicon-user"></span>  Login </a>
+
             </div>
         </div>
      </nav>
 
      <div class="container">
        <div class="row align-items-center">
-         <div class="col-6">
-           <div id="anim">Escape</div>
-           <div id="anim"><span>into amazing experiences</span></div>
+         <div class="col-6" id="wrd" >
+           <div id="anim">Cakes are healthy too,</div>
+           <div id="anim"><span>you just eat a small slice.</span></div>
          </div>
-         <div class="col-md-6">
+
+         <div class="col-md-6" >
            <section>
-             <img class="bottom img-responsive" src="assets/birthday.jpg">
-             <img class="top img-responsive" src="assets/cup.jpg">
-           </section>
+             <img class="bottom img-responsive" id ="img1" src="assets/birthday.jpg">
+             <img class="top img-responsive" id ="img1" src="assets/cup.jpg">
+          </section>
          </div>
-       </div>
-    <div class="container">
-      <div class="row">
+    <div class= "container">
+      <div class="row align-items-end">
         <div class="col text-center">
-          <a href="menu.html"><button type="button" class="btn btn-dark">Order Now</button></a>
+          <a href="menu.html"><button type="button" id="orderBtn" class="btn btn-dark">Order Now</button></a>
         </div>
       </div>
     </div>
-    </div>
+  </div>
+</div>
     <h3 id="abt">Featured Cake</h3>
     <div class="carousel-wrapper align-self-center " id="feat">
       <div class="carousel" data-flickity>
@@ -130,7 +132,15 @@
         </div>
       </div>
     </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/7.9.3/firebase-app.js"></script>
 
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="/__/firebase/7.9.3/firebase-analytics.js"></script>
+
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
