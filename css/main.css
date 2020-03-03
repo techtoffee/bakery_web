@@ -21,12 +21,7 @@ html,body{
   position: fixed;
   overflow:visible;
 }
-#orderBtn{
-  margin-top: 220px
-}
-#wrd{
-  margin-top: 110px
-}
+
 #abt{
   margin-top: 100px;
 }
@@ -45,7 +40,6 @@ html,body{
   overflow:hidden;
   white-space:nowrap;
   font-size: 30px
-
 }
 #anim:first-of-type {    /* For increasing performance
                        ID/Class should've been used.
@@ -86,6 +80,12 @@ html,body{
   display: block;
 }
 
+#img3 {
+  max-width: 100%;
+  height: 150px;
+  display: block;
+}
+
 @import url("https://fonts.googleapis.com/css?family=Hind:400,700");
 html, body {
   font-family: 'Hind', sans-serif;
@@ -111,7 +111,7 @@ h3 {
 .carousel-wrapper {
   position: relative;
   width: 70%;
-  height: 80%;
+  height: 70%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
