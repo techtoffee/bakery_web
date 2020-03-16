@@ -19,125 +19,373 @@
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
     <link rel="stylesheet" href="https://unpkg.com/flickity@2.0/dist/flickity.min.css">
     <script src="https://unpkg.com/flickity@2.0/dist/flickity.pkgd.min.js"></script>
 </head>
 
 <body>
-    <nav class="navbar navbar-fixed-top navbar-expand-sm navbar-light  ">
-        <a class="navbar-brand" id="nav"  href="#">Sri Fried Chicken & Pastries</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+    <nav class="navbar navbar-fixed-top navbar-expand-sm navbar-dark  ">
+        <a class="navbar-brand" id="nav"  href="index.html">Sri Fried Chicken & Pastries</a>
+        <button class="navbar-toggler" id=toggle type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav navbar-right ">
                 <a class="nav-item nav-link active" id="nav" href="index.html">Home <span class="sr-only">(current)</span></a>
-
                 <a class="nav-item nav-link"id="nav" href="menu.html">Menu</a>
-                <a class="nav-item nav-link"id="nav" href="">AboutUs</a>
-                <a class="nav-item nav-link"id="nav" href="cart.html"><span class="glyphicon glyphicon-shopping-cart"><span class="tt-cart">0</span> Cart  </a>
-                <a class="nav-item nav-link"id="nav" href="login.php"><span class="glyphicon glyphicon-user"></span>  Login </a>
+                <a class="nav-item nav-link"id="nav" href="index.html#abt">AboutUs</a>
+                <a class="nav-item nav-link"id="nav" href=""><span class="glyphicon glyphicon-shopping-cart"><span class="tt-cart">0</span> Cart  </a>
+                <a class="nav-item nav-link"id="nav" href=""><span class="glyphicon glyphicon-user"></span>  Login </a>
             </div>
         </div>
     </nav>
+    <h1 id="mname">MENU</h1>
+    <div class="container1 w3-container  w3-padding-65 w3-medium" id="menu">
+        <div class="w3-content">
 
-    <div class="container">
-            <div class="image">
-                <img src="assets/vanilla.jpg" alt="Vanilla">
-                <h3>Vanilla Cake</h3>
-                <h3>Rs 150</h3>
-                <a class="add-cart cart1" href="#">Add Cart</a>
-                <input type="hidden" value="15"/>
-            </div>
+          <div class="w3-row w3-center w3-border w3-border-dark-grey" id ="">
+            <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');" id="myLink">
+              <div class="w3-col s4 tablink w3-padding-large w3-hover-blue">Starters</div>
+            </a>
+            <a href="javascript:void(0)" onclick="openMenu(event, 'Shakes');">
+                <div class="w3-col s4 tablink w3-padding-large w3-hover-blue">Milk Shakes</div>
+            </a>
+            <a href="javascript:void(0)" onclick="openMenu(event, 'Desserts');">
+                <div class="w3-col s4 tablink w3-padding-large w3-hover-blue">Desserts</div>
+            </a>
+            <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');">
+              <div class="w3-col s4 tablink w3-padding-large w3-hover-blue">Pizza</div>
+            </a>
+            <a href="javascript:void(0)" onclick="openMenu(event, 'Pastry');">
+                <div class="w3-col s4 tablink w3-padding-large w3-hover-blue">Fresh Cream Pastry</div>
+            </a>
+            <a href="javascript:void(0)" onclick="openMenu(event, 'Cakes');">
+                <div class="w3-col s4 tablink w3-padding-large w3-hover-blue">Fresh Cream Cakes</div>
+            </a>
+            <a href="javascript:void(0)" onclick="openMenu(event, 'Chicken');">
+                <div class="w3-col s4 tablink w3-padding-large w3-hover-blue">Chicken</div>
+            </a>
+            <a href="javascript:void(0)" onclick="openMenu(event, 'ChickenCombo');">
+                <div class="w3-col s4 tablink w3-padding-large w3-hover-blue">Chicken Combo</div>
+            </a>
+            <a href="javascript:void(0)" onclick="openMenu(event, 'BurgerCombo');">
+                <div class="w3-col s4 tablink w3-padding-large w3-hover-blue">Burger Combo</div>
+            </a>
+            <a href="javascript:void(0)" onclick="openMenu(event, 'WrapCombo');">
+                <div class="w3-col s4 tablink w3-padding-large w3-hover-blue">Wraps Combo</div>
+            </a>
+            <a href="javascript:void(0)" onclick="openMenu(event, 'Sandwiches');">
+                <div class="w3-col s4 tablink w3-padding-large w3-hover-blue">Sandwiches</div>
+            </a>
+            <a href="javascript:void(0)" onclick="openMenu(event, 'Snacks');">
+              <div class="w3-col s4 tablink w3-padding-large w3-hover-blue">Snacks</div>
+            </a>
+            <a href="javascript:void(0)" onclick="openMenu(event, 'Burger');">
+              <div class="w3-col s4 tablink w3-padding-large w3-hover-blue">Burger</div>
+            </a>
+            <a href="javascript:void(0)" onclick="openMenu(event, 'Wrap');">
+                <div class="w3-col s4 tablink w3-padding-large w3-hover-blue">Wrap</div>
+            </a>
+          </div>
 
-            <div class="image">
-                <img src="assets/chocolate.jpg" alt="Chocolate">
-                <h3>Chocolate Cake</h3>
-                <h3>Rs 230</h3>
-                <a class="add-cart cart2" href="#">Add Cart</a>
-                <input type="hidden" value="20"/>
-            </div>
+          <div id="Starter" class="w3-container menu w3-padding-32 w3-medium w3-white">
+            <h4><b>French Fries</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 55</span></h4>
+            <hr>
 
-            <div class="image">
-                <img src="assets/strawberry.jpg" alt="Strawberry">
-                <h3>Strawberry Cake</h3>
-                <h3>Rs 320</h3>
-                <a class="add-cart cart3" href="#">Add Cart</a>
-                <input type="hidden" value="15"/>
-            </div>
-            <div class="image">
-                <img src="assets/vanilla.jpg" alt="Vanilla">
-                <h3>Vanilla Cake</h3>
-                <h3>Rs 150</h3>
-                <a class="add-cart cart1" href="#">Add Cart</a>
-                <input type="hidden" value="15"/>
-            </div>
+            <h4><b>Masala Fries</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 55</span></h4>
+            <hr>
 
-            <div class="image">
-                <img src="assets/chocolate.jpg" alt="Chocolate">
-                <h3>Chocolate Cake</h3>
-                <h3>Rs 230</h3>
-                <a class="add-cart cart2" href="#">Add Cart</a>
-                <input type="hidden" value="20"/>
-            </div>
+            <h4><b>Veg Cheese Nuggets</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 55</span></h4>
+            <hr>
 
-            <div class="image">
-                <img src="assets/strawberry.jpg" alt="Strawberry">
-                <h3>Strawberry Cake</h3>
-                <h3>Rs 320</h3>
-                <a class="add-cart cart3" href="#">Add Cart</a>
-                <input type="hidden" value="15"/>
-            </div>
-            <div class="image">
-                <img src="assets/vanilla.jpg" alt="Vanilla">
-                <h3>Vanilla Cake</h3>
-                <h3>Rs 150</h3>
-                <a class="add-cart cart1" href="#">Add Cart</a>
-                <input type="hidden" value="15"/>
-            </div>
+            <h4><b>Smileys</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 50</span></h4>
+            <hr>
 
-            <div class="image">
-                <img src="assets/chocolate.jpg" alt="Chocolate">
-                <h3>Chocolate Cake</h3>
-                <h3>Rs 230</h3>
-                <a class="add-cart cart2" href="#">Add Cart</a>
-                <input type="hidden" value="20"/>
-            </div>
+            <h4><b>Samosa</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 50</span></h4>
+            <hr>
 
-            <div class="image">
-                <img src="assets/strawberry.jpg" alt="Strawberry">
-                <h3>Strawberry Cake</h3>
-                <h3>Rs 320</h3>
-                <a class="add-cart cart3" href="#">Add Cart</a>
-                <input type="hidden" value="15"/>
-            </div>
-            <div class="image">
-                <img src="assets/vanilla.jpg" alt="Vanilla">
-                <h3>Vanilla Cake</h3>
-                <h3>Rs 150</h3>
-                <a class="add-cart cart1" href="#">Add Cart</a>
-                <input type="hidden" value="15"/>
-            </div>
+            <h4><b>Veg Strips</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 50</span></h4>
+          </div>
 
-            <div class="image">
-                <img src="assets/chocolate.jpg" alt="Chocolate">
-                <h3>Chocolate Cake</h3>
-                <h3>Rs 230</h3>
-                <a class="add-cart cart2" href="#">Add Cart</a>
-                <input type="hidden" value="20"/>
-            </div>
+          <div id="Shakes" class="w3-container menu w3-padding-32 w3-medium w3-white">
+            <h4><b>Mango</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 70</span></h4>
+            <hr>
 
-            <div class="image">
-                <img src="assets/strawberry.jpg" alt="Strawberry">
-                <h3>Strawberry Cake</h3>
-                <h3>Rs 320</h3>
-                <a class="add-cart cart3" href="#">Add Cart</a>
-                <input type="hidden" value="15"/>
-            </div>
+            <h4><b>Strawberry</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 70</span></h4>
+            <hr>
+
+            <h4><b>Chocolate</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 80</span></h4>
+            <hr>
+
+            <h4><b>Vanilla</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 70</span></h4>
+            <hr>
+
+            <h4><b>Butte Scotch</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 80</span></h4>
+            <hr>
+
+            <h4><b>Milk Shakes with Ice Cream Extra Scoop</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 15</span></h4>
+          </div>
+
+          <div id="Desserts" class="w3-container menu w3-padding-32 w3-medium w3-white">
+            <h4><b>Vanilla</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 50</span></h4>
+            <hr>
+
+            <h4><b>Strawberry</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 50</span></h4>
+            <hr>
+
+            <h4><b>Chocolate</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 55</span></h4>
+            <hr>
+
+            <h4><b>Butter Scotch</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 55</span></h4>
+            <hr>
+
+            <h4><b>Mango</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 55</span></h4>
+            <hr>
+
+            <h4><b>Black Curent</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 60</span></h4>
+            <hr>
+
+            <h4><b>Fruit n Nut</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 55</span></h4>
+            <hr>
+
+            <h4><b>Fig Honey</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 70</span></h4>
+          </div>
+
+          <div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
+            <h4><b>Margherita</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 109</span></h4>
+            <p class="w3-text-grey">Mozzarella Cheese</p>
+            <hr>
+            <h4><b>Tomato & Cheese Pizza</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 120</span></h4>
+            <p class="w3-text-grey">Mozzarella Cheese, Tomato</p>
+            <hr>
+
+            <h4><b>Veg Pizza</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 135</span></h4>
+            <p class="w3-text-grey">Onions + Capsicum</p>
+            <hr>
+
+            <h4><b>Farm Pizza</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 145</span></h4>
+            <p class="w3-text-grey">Onion + Mushroom + Tomato + Capsicum</p>
+            <hr>
+
+            <h4><b>Olive Pizza</b> <span class="w3-tag w3-red w3-round"></span><span class="w3-right w3-tag w3-dark-grey w3-round">Rs 165</span></h4>
+            <p class="w3-text-grey">Black olive + Gold Corn + Jalapeno</p>
+            <hr>
+
+            <h4><b>Paneer Pizza</b> <span class="w3-tag w3-grey w3-round"></span><span class="w3-right w3-tag w3-dark-grey w3-round">Rs 175</span></h4>
+            <p class="w3-text-grey">Paneer, Capsicum, Red Pepper</p>
+            <hr>
+
+            <h4><b>Deluxe Pizza</b> <span class="w3-tag w3-red w3-round"></span><span class="w3-right w3-tag w3-dark-grey w3-round">Rs 175</span></h4>
+            <p class="w3-text-grey">Onion,Paneer,Capsicum,Mushroom,Gold Corn</p>
+            <hr>
+
+            <h4><b>Chicken Pizza</b> <span class="w3-tag w3-red w3-round"></span><span class="w3-right w3-tag w3-dark-grey w3-round">Rs 205</span></h4>
+            <p class="w3-text-grey">(Chicken,Green Chilly) (Chicken Tikka,Green Chilly)</p>
+            <hr>
+
+            <h4><b>Spicy SFC Pizza</b> <span class="w3-tag w3-red w3-round"></span><span class="w3-right w3-tag w3-dark-grey w3-round">Rs 185</span></h4>
+            <p class="w3-text-grey">Pizza Souce,Onion,Capsicum,Green Chilly,Cheese,Fresh Tomato,Oregano & Chilly Flakes</p>
+            <hr>
+            <h4><b>Chicken BBQ Pizza</b> <span class="w3-tag w3-red w3-round"></span><span class="w3-right w3-tag w3-dark-grey w3-round">Rs 205</span></h4>
+            <p class="w3-text-grey">Green Chilly,Barbeque</p>
+            <hr>
+            <h4><b>Mozzarella Cheese</b> <span class="w3-tag w3-red w3-round"></span><span class="w3-right w3-tag w3-dark-grey w3-round">Rs 40</span></h4>
+            <p class="w3-text-grey">(Extra Toppings) Veg (Tomato ,Onion,Capsicum,Mushroom,Jalapeno)</p>
+            <hr>
+
+          </div>
+
+          <div id="Pastry" class="w3-container menu w3-padding-32 w3-medium w3-white">
+            <h4><b>White Forest</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 50</span></h4>
+            <hr>
+
+            <h4><b>Black Forest</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 50</span></h4>
+            <hr>
+
+            <h4><b>Butter Scotch</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 50</span></h4>
+            <hr>
+
+            <h4><b>Pineapple</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 50</span></h4>
+            <hr>
+
+            <h4><b>Brownie</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 60</span></h4>
+            <hr>
+
+            <h4><b>Lava Cake</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 50</span></h4>
+            <hr>
+
+            <h4><b>Choco Truffle</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 60</span></h4>
+            <hr>
+
+            <h4><b>Cup Cake</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 10</span></h4>
+          </div>
+
+          <div id="Cakes" class="w3-container menu w3-padding-32 w3-medium w3-white">
+            <h4><b>Black Forest</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 600(1Kg)</span> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 325(1/2Kg)</span></h1>
+            <hr>
+
+            <h4><b>White Forest</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 600(1Kg)</span> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 325(1/2Kg)</span></h4>
+            <hr>
+
+            <h4><b>Butter Scotch</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 650(1Kg)</span> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 325(1/2Kg)</span></h4>
+            <hr>
+
+            <h4><b>Pineapple</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 600(1Kg)</span> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 325(1/2Kg)</span></h4>
+            <hr>
+
+            <h4><b>Choco Flakes</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 700(1Kg)</span> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 350(1/2Kg)</span></h4>
+            <hr>
+
+            <h4><b>Red Velvette</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 950(1Kg)</span> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 475(1/2Kg)</span></h4>
+            <hr>
+
+            <h4><b>Choco Truffle Cake</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 750(1Kg)</span> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 350(1/2Kg)</span></h4>
+            <hr>
+
+            <h4><b>Strawberry</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 650(1Kg)</span> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 325(1/2Kg)</span></h4>
+            <hr>
+
+            <h4><b>Mango Pastry</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 650(1Kg)</span> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 325(1/2Kg)</span></h4>
+            <hr>
+          </div>
+
+          <div id="Chicken" class="w3-container menu w3-padding-32 w3-medium w3-white">
+            <h4><b>1 pc Chicken</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 90</span></h4>
+            <hr>
+
+            <h4><b>2 pcs Chicken</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 165</span></h4>
+            <hr>
+
+            <h4><b>4 pcs Chicken</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 320</span></h4>
+            <hr>
+
+            <h4><b>8 pcs Chicken</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 570</span></h4>
+            <hr>
+
+            <h4><b>12 pcs Chicken</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 800</span></h4>
+            <hr>
+          </div>
+          <div id="ChickenCombo" class="w3-container menu w3-padding-32 w3-medium w3-white">
+            <h4><b>1 pc Chicken, French Fries & PEPSI reg</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 165</span></h4>
+            <hr>
+
+            <h4><b>2 pcs Chicken, French Fries & PEPSI reg</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 240</span></h4>
+            <hr>
+
+            <h4><b>3 pcs Chicken, French Fries & PEPSI reg</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 320</span></h4>
+            <hr>
+
+            <h4><b>4 pcs Chicken, French Fries & PEPSI reg</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 385</span></h4>
+            <hr>
+
+            <h4><b>8 pcs Chicken,2 French Fries & 4 PEPSI reg</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 770</span></h4>
+            <hr>
+
+            <h4><b>12 pcs Chicken2 French Fries & 6 PEPSI reg</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 1045</span></h4>
+            <hr>
+          </div>
+          <div id="BurgerCombo" class="w3-container menu w3-padding-32 w3-medium w3-white">
+            <h4><b>Veg Burger, French Fries & PEPSI reg</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 140</span></h4>
+            <hr>
+
+            <h4><b>Veg Burger,Masala French Fries & PEPSI reg</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 140</span></h4>
+            <hr>
+
+            <h4><b>Chicken Burger, French Fries & PEPSI reg</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 200</span></h4>
+            <hr>
+
+            <h4><b>SFC Tower Burger, French Fries & PEPSI reg</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 210</span></h4>
+            <hr>
+
+            <h4><b>SFC Chicken Burger 1 pc Chicken, PEPSI reg</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 220</span></h4>
+            <hr>
+          </div>
+
+          <div id="WrapCombo" class="w3-container menu w3-padding-32 w3-medium w3-white">
+            <h4><b>Veg Wrap, French Fries & PEPSI reg</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 150</span></h4>
+            <hr>
+
+            <h4><b>Panner Wrap, French Fries & PEPSI reg</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 155</span></h4>
+            <hr>
+
+            <h4><b>Chicken Wrap, French Fries & PEPSI reg</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 180</span></h4>
+          </div>
+
+          <div id="Sandwiches" class="w3-container menu w3-padding-32 w3-medium w3-white">
+            <h4><b>Plain Sandwich</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 40</span></h4>
+            <hr>
+
+            <h4><b>Grill Veg Sandwich</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 55</span></h4>
+            <hr>
+
+            <h4><b>Grill Paneer Sandwich</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 75</span></h4>
+            <hr>
+
+            <h4><b>Grill Creamy Corn Sandwich</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 70</span></h4>
+            <hr>
+
+            <h4><b>Grill Chicken Sandwich</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 105</span></h4>
+          </div>
+
+          <div id="Snacks" class="w3-container menu w3-padding-32 w3-medium w3-white">
+            <h4><b>Hot Wings</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 105</span></h4>
+            <hr>
+
+            <h4><b>Chicken Lollypop</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 170</span></h4>
+            <hr>
+
+            <h4><b>Chicken Strips</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 120</span></h4>
+            <hr>
+
+            <h4><b>Chicken Popcorn</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 115</span></h4>
+          </div>
+
+          <div id="Burger" class="w3-container menu w3-padding-32 w3-medium w3-white">
+            <h4><b>Veg Fatty Burger</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 65</span></h4>
+            <hr>
+
+            <h4><b>SFC Chicken Burger</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 119</span></h4>
+            <hr>
+
+            <h4><b>SFC Tower Burger</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 140</span></h4>
+            <hr>
+
+            <h4><b>Chicken Fatty Burger</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 109</span></h4>
+          </div>
+
+          <div id="Wrap" class="w3-container menu w3-padding-32 w3-medium w3-white">
+            <h4><b>Veg Wrap</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 60</span></h4>
+            <hr>
+
+            <h4><b>Panner Wrap</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 85</span></h4>
+            <hr>
+
+            <h4><b>Chicken Wrap</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs 115</span></h4>
+          </div>
+
         </div>
+    </div>
 
+    <script>
+        // Tabbed Menu
+        function openMenu(evt, menuName) {
+          var i, x, tablinks;
+          x = document.getElementsByClassName("menu");
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablink");
+          for (i = 0; i < x.length; i++) {
+             tablinks[i].className = tablinks[i].className.replace(" w3-blue", "");
+          }
+          document.getElementById(menuName).style.display = "block";
+          evt.currentTarget.firstElementChild.className += " w3-blue";
+        }
+        document.getElementById("myLink").click();
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
